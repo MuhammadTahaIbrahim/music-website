@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/50b2160ccc.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+   
+</head>
+<body>
+    
+    <!-- ===navbar==== -->
+    <div class="container-fluid">
+        <!-- ===nav==== -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-start" id="mynav" >
+         <!-- ====toggle bar ==    -->
+         <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="./index.html">Home</a>
+          
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="" class="dropdown-toggle " data-bs-toggle="dropdown">Albums</a>
+            <ul class="dropdown-menu bg-dark text-light">
+                <li><a href="./movie.html" class="dropdown-item bg-dark">Movies</a></li>
+                <li><a href="./bands.html" class="dropdown-item bg-dark">Bands</a></li>
+                <li><a href="./solo.html" class="dropdown-item bg-dark">Solo performer's</a></li>
+            </ul>
+            </li>   
+        </ul>
+        <!-- ===night mode=== -->
+        <ul class="navbar-nav">
+            <li><a href="">Night mode</a>
+
+            </li>
+            <div class="form-check form-switch mx-4 mt-2" >
+    <input type="checkbox" class="form-check-input" id="mode1">
+    <label for="" class="form-label" ></label>
+            </div>
+        </ul>
+        <hr>
+        <a href="./cotact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./termandcondition.html">Terms and Conditions</a>
+        
+
+
+        </div>
+      
+        <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars fa-sm"></i></button>
+          <!-- ===jquery of mode=== -->
+ <script>
+
+    $(document).ready(function(){
+
+       $('#mode1').click(function(){
+           $('body').toggleClass('bg-dark');
+           $('body').toggleClass('text-white');
+           $('#mode1').toggleClass('bg-dark');
+          
+       });
+    });
+</script>   
+        <!-- ===rythm section=== -->
+            <span class="navbar-text mx-5">
+                <a href="index.html" class="navbar-brand mx-5"><span ><i class="fa-sharp fa-solid fa-r  fa-2xl" style="color: #fb15d1;"></i></span>ythm House</a>
+            </span>
+          
+
+        </nav>
+        </div>
+        
+  <!-- ==scirpt of toggle bar=== -->
+  <script>
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+        <!-- ====heading=== -->
+        <div><hr class="hr1"></div>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-12 mt-4">
+            <h1>Welcome to Rythm House,</h1>
+            <p>the web most comprehensive collection of <span class="spp">soundtrack</span> and playlists.</p>
+        </div>
+    </div>
+    <!-- ====hr==== -->
+    <hr color="black" size="5">
+    </div>
+
+    <!-- ====carousel===== -->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-md-8"> 
+                 <h6>Featured Albums</h6> 
+    <!-- =====carousel start==== -->
+    <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="mycaro">
+        <div class="carousel-inner">
+
+        <!-- =====1=====     -->
+        <div class="carousel-item active">
+           <img src="./image/oppenhimer 1.png" alt="" class="d-block w-100"> 
+        <div class="carousel-caption">
+            <h5>Movie</h5>
+            <p>Oppenheimer</p>
+        </div>
+    </div>
+
+    <!-- ====2===== -->
+    <div class="carousel-item">
+          <img src="./image/ellei goulding 1.jpg" alt="" class="d-block w-100">  
+        <div class="carousel-caption">
+            <h5>Solo Performer</h5>
+            <div><p>Ellie Goulding</p></div>
+        </div>
+    </div>
+
+    <!-- ======3===== -->
+
+    <div class="carousel-item">
+            <img src="./image/bts 1.jpg" alt="" class="d-block w-100">
+        <div class="carousel-caption">
+            <h5>Band Musicians</h5>
+            <p>BTS</p>
+        </div>
+    </div>
+
+    <!-- =====4===== -->
+    <div class="carousel-item">
+        <img src="./image/myfault3 - Copy.jpg" alt="" class="d-block w-100">
+    <div class="carousel-caption">
+        <h5>Movie</h5>
+        <p>My Fault</p>
+    </div>
+    </div>
+
+    <!-- =====5===== -->
+
+    <div class="carousel-item">
+        <img src="./image/justin biber 1.png" alt="" class="d-block w-100">
+    <div class="carousel-caption text-light">
+        <h4>Solo Performer</h4>
+        <p>Justin Bieber</p>
+    </div>
+</div>
+
+    <!-- ======6===== -->
+
+    <div class="carousel-item">
+        <img src="./image/image dragon 1.jpg" alt="" class="d-block w-100">
+    <div class="carousel-caption">
+        <h5 >Band Musicians</h5>
+        <p>Imagine Dragons</p>
+    </div>
+    </div>
+   <!-- ============ 7================== -->
+   <div class="carousel-item">
+    <img src="./image/barbie6.jpg" alt="" class="d-block w-100">
+<div class="carousel-caption">
+    <h3 class="text-light ">Movie</h3>
+    <p class="text-light ">Barbie</p>
+</div>
+</div>
+
+     <!-- ----------button------------ -->
+     <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#mycaro">
+        <span class="carousel-control-next-icon bg-dark"></span>
+    </button>
+
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#mycaro">
+        <span class="carousel-control-prev-icon bg-dark"></span>
+    </button>
+    <!-- ------------indicators------ -->
+    <div class="carousel-indicators">
+        <button class="active" data-bs-target="#mycaro" data-bs-slide-to="0"></button>
+        <button  data-bs-target="#mycaro" data-bs-slide-to="1"></button>
+        <button  data-bs-target="#mycaro" data-bs-slide-to="2"></button>
+        <button  data-bs-target="#mycaro" data-bs-slide-to="3"></button>
+        <button  data-bs-target="#mycaro" data-bs-slide-to="4"></button>
+        <button  data-bs-target="#mycaro" data-bs-slide-to="5"></button>
+        <button  data-bs-target="#mycaro" data-bs-slide-to="6"></button>
+    </div>
+
+
+        </div>
+    </div>
+ </div>
+
+    <!-- =======popular Albums==== -->
+    
+    <div class="col-md-4">
+        <h6>Popular Albums</h6>
+        <!-- ===1===== -->
+        <div class="d-flex">
+       <div> <button class="bg-dark text-light">#1</button></div>
+        <div class="mx-1">Barbie</div>
+        <div class=" spp1 mx-5">
+        <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>384.5M . 49 SONGS</div>
+        </div>
+
+        <!-- ====2===== -->
+        <div class="mt-1 d-flex">
+           <div><button class="bg-dark text-light">#2</button></div> 
+            <div class="mx-1">BTS</div>
+            <div class=" spp2 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>351.2M . 235 SONGS</div>
+            </div>
+
+        <!-- ====3=====     -->
+        <div class="mt-1 d-flex">
+           <div><button class="bg-dark text-light">#3</button></div> 
+            <div class="mx-1">Imagine Dragons</div>
+            <div class=" spp3 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>338.8M . 35 SONGS</div>
+            </div>
+
+            <!-- ======4==== -->
+            <div class="mt-1 d-flex">
+            <div>   <button class="bg-dark text-light">#4</button></div> 
+             <div><span class="mx-1">Oppenheimer</span></div>   
+                <div class=" spp4 mx-5">
+                <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>325.7M . 8 SONGS</div>
+                </div>
+
+                <!-- ======5=== -->
+                <div class="mt-1 d-flex">
+                 <div>  <button class="bg-dark text-light">#5</button></div> 
+                 <div> <span class="mx-1">taylor swift</span></div>  
+                    <div class=" spp5 mx-5">
+                    <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>315.3M . 200 SONGS</div>
+                    </div>
+         <!-- =====6====            -->
+         <div class="mt-1 d-flex">
+          <div>  <button class="bg-dark text-light">#6</button></div>
+           <div> <span class="mx-1">Justin Bieber</span></div>
+            <div class=" spp6 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>310.6M . 75 SONGS</div>
+            </div>
+
+         <!-- =======7====    -->
+         <div class="mt-1 d-flex">
+          <div>  <button class="bg-dark text-light">#7</button></div>
+          <div> <span class="mx-1">Ellie Goulding</span></div> 
+            <div class=" spp7 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>306.1M . 45 SONGS</div>
+            </div>
+
+         <!-- =====8=====    -->
+         <div class="mt-1 d-flex">
+          <div> <button class="bg-dark text-light">#8</button></div> 
+          <div>  <span class="mx-1">My Fault</span></div>
+            <div class=" spp8 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>302.9M . 20 SONGS</div>
+            </div>
+
+         <!-- =====9======    -->
+         <div class="mt-1 d-flex">
+         <div>  <button class="bg-dark text-light">#9</button></div> 
+          <div> <span class="mx-1">One Direction</span></div> 
+            <div class=" spp9 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>299.5M . 109 SONGS</div>
+            </div>
+
+         <!-- =====10======    -->
+         <div class="mt-1 d-flex">
+          <div>  <button class="bg-dark text-light">#10</button></div>
+          <div>  <span class="mx-1">Titanic</span></div>
+            <div class=" spp10 mx-5">
+            <i class="fa-solid fa-eye fa-sm" style="color: #000000;"></i>280M . 11 SONGS</div>
+            </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- ====heading featued Albums===== -->
+
+    <div class="container mt-5">
+        <h1 class="text-center mt-5">Featured Albums</h1>
+        <!-- ====featued hollywood moveis==== -->
+         <!-- ====hr==== -->
+    <hr color="black" size="5">
+        <h4 class="mt-2">Featured Hollywood Movies</h4>
+         <!-- ====hr==== -->
+    <hr color="black" size="5">
+        <!-- cards of moveis -->
+        <section >
+            <div class="row mt-4">
+                <!-- =====1===== -->
+                <div class="col-md-3">
+                        <div class="img-container">
+                    
+                            <img src="./image/oppen 1.png" class="card-img-top" alt="" onmouseover="showimage(this,'./image/oppenhimer 3.jpg')"
+                              onmouseout="showimage(this,'./image/oppen 1.png')">
+                        <div class="overlay text-center">
+        <button class="btn"><a href="./oppenh.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button> 
+                   
+                     <h5 class=""><b class="fs-5">Oppenheimer</b></h5>
+                    <h5 class=""><b class="fs-5">24 songs</b></h5>
+                    </div>
+            </div>    
+                    </div>
+                
+
+                <!-- ===2=== -->
+
+                <div class="col-md-3">
+                        <div class="img-container">    
+                            <img src="./image/barbie.webp" class="card-img-top" alt="" onmouseover="barbieimage(this,'./image/barbie 4.jpg')"
+                            onmouseout="barbieimage(this,'./image/barbie.webp')">
+                            <div class="overlay text-center">
+                    <button class="btn"><a href="./barbie.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                            <div class=" text-center"> 
+                                 <h5><b class="fs-5">Barbie</b></h5>
+                              <h5>  <b class="fs-5">41 songs</b></h5>
+                            </div> 
+                            </div>
+                        </div>
+                    
+                   
+                </div>
+
+        <!-- ====3=====         -->
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/my fault 1.jpg" alt="" class="card-img-top "  onmouseover="barbieimage(this,'./image/myfault4.jpg')"
+                    onmouseout="barbieimage(this,'./image/my fault 1.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./myfault.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class="text-center">  
+                        <h5> <b class="fs-5">My Fault</b></h5>
+                      <h5> <b class="fs-5">19 songs</b></h5>
+                    </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+
+        <!-- ======4====== -->
+
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/drstrange 1.jpg" alt="" class="card-img-top " onmouseover="dsimage(this,'./image/doctor strange 3.jpg')"
+                    onmouseout="dsimage(this,'./image/drstrange 1.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./doctorstrange.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class="text-center"> 
+                       <h5>  <b class="fs-5">Doctor Strange 2</b></h5> 
+                     <h5>   <b class="fs-5">32 songs</b></h5>
+                    </div>
+                </div>
+                    
+                </div>
+            
+            
+        </div>
+                </div>
+                </section>
+    </div>
+
+    <!-- =====featued bollywood moveis=== -->
+    
+    <div class="container mt-5">
+        <h4 class="mt-2">Featured Bollywood Movies</h4>
+        <!-- cards of moveis -->
+        <section >
+            <div class="row mt-4">
+                <!-- =====1===== -->
+                <div class="col-md-3">
+                    <div class="img-container">
+                        <img src="./image/variso1.jpg" alt="" class="card-img-top "  onmouseover="shidimage(this,'./image/varisu2.jpg')"
+                        onmouseout="shidimage(this,'./image/variso1.jpg')">
+                        <div class="overlay text-center">
+                <button class="btn"><a href="./varisu.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                        <div class=""> 
+                            <h5> <b class="fs-5">Varisu</b></h5> 
+                          <h5> <b class="fs-5">4 songs</b></h5> 
+                        </div>
+                    </div>
+                        
+                    </div>   
+            </div>
+                
+
+                <!-- ===2=== -->
+
+                <div class="col-md-3">
+                        <div class="img-container">
+                            <img src="./image/kgf 1.jpg" alt="" class="card-img-top " onmouseover="shidimage(this,'./image/kgf4.jpg')"
+                            onmouseout="shidimage(this,'./image/kgf 1.jpg')">
+                            <div class="overlay text-center">
+                    <button class="btn"><a href="./kgf.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                            <div class=""> 
+                                 <h5><b class="fs-5">KGF</b></h5>
+                               <h5> <b class="fs-5">9 songs</b></h5>
+                            </div> 
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+
+        <!-- ====3=====         -->
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/pathan 1.jpg" alt="" class="card-img-top " onmouseover="shidimage(this,'./image/pathan3.jpg')"
+                    onmouseout="shidimage(this,'./image/pathan 1.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./pathan.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class="">  
+                      <h5>   <b class="fs-5">Pathan</b></h5>
+                      <h5> <b class="fs-5">4 songs</b></h5> 
+                    </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+
+        <!-- ======4====== -->
+
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/london 1.jpg" alt="" class="card-img-top "  onmouseover="shidimage(this,'./image/1920london4.jpg')"
+                    onmouseout="shidimage(this,'./image/london 1.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./1920london.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class=""> 
+                        <h5> <b class="fs-5">1920 london</b></h5> 
+                      <h5> <b class="fs-5">4 songs</b></h5> 
+                    </div>
+                </div>
+                    
+                </div>
+            
+           
+        </div>
+                </div>
+                </section>
+    </div>
+
+    <!-- =====featued solo performers=== -->
+    
+    <div class="container mt-5">
+         <!-- ====hr==== -->
+    <hr color="black" size="5">
+        <h4 class="mt-2">Featured Solo Performer's</h4>
+         <!-- ====hr==== -->
+    <hr color="black" size="5">
+        <!-- cards of moveis -->
+        <section >
+            <div class="row mt-4">
+                <!-- =====1===== -->
+
+                <div class="col-md-3">
+                        <div class="img-container">
+                        <img src="./image/taylor swift 1.jpg" alt="" class="card-img-top rounded-circle " onmouseover="shidimage(this,'./image/taylorswift3.jpg')"
+                        onmouseout="shidimage(this,'./image/taylor swift 1.jpg')">
+                        <div class="overlay text-center">
+        <button class="btn"><a href="./taylorswift.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button> 
+                 <div class="">  
+                     <h5> <b class="fs-5">Taylor Swift</b></h5>
+                    <h5><b class="fs-5">32 songs</b></h5> 
+                 </div>
+                    </div>
+            </div>
+               
+                    
+                    </div>
+                
+
+                <!-- ===2=== -->
+
+                <div class="col-md-3">
+                        <div class="img-container">
+                            <img src="./image/alan wlker 1.jpg" alt="" class="card-img-top rounded-circle" onmouseover="shidimage(this,'./image/alanwalker3.jpeg')"
+                            onmouseout="shidimage(this,'./image/alan wlker 1.jpg')">
+                            <div class="overlay text-center">
+                    <button class="btn"><a href="./alanwalker.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: rgb(212, 212, 231);"></i></a></button>                
+                            <div class=""> 
+                            <h5>   <b class="fs-5">Alan Walker</b></h5> 
+                             <h5>  <b class="fs-5">32 songs</b></h5> 
+                            </div> 
+                            </div>
+                        </div>        
+                   
+                </div>
+        <!-- ====3=====         -->
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/ellei goulding 2.jpg" alt="" class="card-img-top rounded-circle" onmouseover="shidimage(this,'./image/elliegulding4.jpg')"
+                    onmouseout="shidimage(this,'./image/ellei goulding 2.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./elliegoulding.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class="">  
+                       <h5> <b class="fs-5">Ellie Goulding</b></h5> 
+                    <h5>   <b class="fs-5">32 songs</b></h5> 
+                    </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <!-- ======4====== -->
+
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/bellli ellish 1.jpg" alt="" class="card-img-top rounded-circle" onmouseover="shidimage(this,'./image/billie ellish 3.jpg')"
+                    onmouseout="shidimage(this,'./image/bellli ellish 1.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./bellieellish.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class=""> 
+                      <h5>   <b class="fs-5">Billie Eilish</b></h5> 
+                       <h5> <b class="fs-5">32 songs</b></h5>
+                    </div>
+                </div>    
+                </div>
+        </div>
+                </div>
+                </section>
+    </div>
+
+    <!-- =====featued band musicians=== -->
+    
+    <div class="container mt-5">
+         <!-- ====hr==== -->
+    <hr color="black" size="5">
+        <h4 class="mt-2">Featured Band Musicians</h4>
+         <!-- ====hr==== -->
+    <hr color="black" size="5">
+        <!-- cards of moveis -->
+        <section >
+            <div class="row mt-4">
+                <!-- =====1===== -->
+                <div class="col-md-3">
+                 <div class="img-container">
+                        <img src="./image/bts 2.jpg" alt="" class="card-img-top rounded-circle"  onmouseover="shidimage(this,'./image/bts4.jpg')"
+                        onmouseout="shidimage(this,'./image/bts 2.jpg')">
+                        <div class="overlay text-center">
+        <button class="btn"><a href="./bts.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button> 
+                 <div class="">  
+                     <h5> <b class="fs-5">BTS</b></h5>
+                    <h5> <b class="fs-5">32 songs</b></h5>
+                 </div>
+                    </div>
+            </div>
+                    </div>
+                
+
+                <!-- ===2=== -->
+
+                <div class="col-md-3">
+                  <div class="img-container">
+                            <img src="./image/one directoin 1.jpg" alt="" class="card-img-top rounded-circle" onmouseover="shidimage(this,'./image/onedirection 4.jpg')"
+                            onmouseout="shidimage(this,'./image/one directoin 1.jpg')">
+                            <div class="overlay text-center">
+                    <button class="btn"><a href="./onedirection.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                            <div class=""> 
+                                 <h5><b class="fs-5">One Direction</b></h5>
+                             <h5>  <b class="fs-5">32 songs</b></h5> 
+                            </div> 
+                            </div>
+                        </div>         
+                </div>
+
+        <!-- ====3=====         -->
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/one republic 1.jpg" alt="" class="card-img-top rounded-circle" onmouseover="shidimage(this,'./image/one republic 4.jpg')"
+                    onmouseout="shidimage(this,'./image/one republic 1.jpg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./onerepublic.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class="">  
+                        <h5><b class="fs-5">One Republic</b></h5>
+                        <h5><b class="fs-5">32 songs</b></h5>
+                    </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <!-- ======4====== -->
+
+        <div class="col-md-3">
+                <div class="img-container">
+                    <img src="./image/jonas brother.jpeg" alt="" class="card-img-top rounded-circle"  onmouseover="shidimage(this,'./image/jonas brother.3.png')"
+                    onmouseout="shidimage(this,'./image/jonas brother.jpeg')">
+                    <div class="overlay text-center">
+            <button class="btn"><a href="./jonas.html"><i class="fa-solid fa-play fa-beat fa-xl" style="color: #d4d4e7;"></i></a></button>                
+                    <div class=""> 
+                        <h5>  <div><b class="fs-5">Jonas Brother</b></h5>
+                        <h5><b class="fs-5">32 songs</b>    
+                    </div>
+                </div>    
+             </div> 
+        </div>
+        </div>
+        </section>
+    </div>
+
+    <!-- javascript -->
+
+    <!-- oppenhiemer -->
+    <script>
+        function showimage(object,url)
+        {
+            object.src=url;
+        }
+        // barbie
+        function barbieimage(object,url)
+        {
+            object.src=url;
+        }
+        // doctorstrange
+        
+        function dsimage(object,url)
+        {
+            object.src=url;
+        }
+
+        // shiddat
+        function shidimage(object,url)
+        
+        {
+            object.src=url;
+            
+        }
+
+        
+        </script>
+
+    <!-- ===footer==== -->
+
+       <div class="container-fluid  text-light mt-5 foot" >
+           <div class="row">
+               <!-- 1 -->
+            <div class="col-md-4 p-5">
+               
+                <span class="navbar-text mt-5">
+                    <a href="" class="navbar-brand mx-3"><span ><i class="fa-sharp fa-solid fa-r  fa-2xl" style="color: #fb15d1;"></i> </span><span class="text-light fh3">ythm House</span></a>
+                </span>
+                <p class="text-light mt-2  justify-content-center">Rythm House is the worlds largest collection of Featured albums soundtracks and playlists. We provide as a piece of musics with vocals, which combines rhymed with instruemental melody.
+
+                </p>
+           
+           </div>
+                <!-- 2 -->
+
+           <div class="col-md-4 mt-5 ">
+           <h5 class="mx-5 text-center">Learn</h5>
+                  <ul class="nav d-block text-center ">
+                      <li class="nav-item "><a href="./termandcondition.html" class="nav-link text-light ">Terms Of Uses</a></li>
+                      <li class="nav-item"><a href="./privacy.html" class="nav-link text-light">Privacy Policy</a></li>
+                      <li class="nav-item"><a href="" class="nav-link text-light "></a></li>
+                      <li class="nav-item"><a href="" class="nav-link text-light "></a></li>
+                  </ul>
+             
+          </div> 
+              
+          <!-- 3 -->
+
+          <div class="col-md-4 my-5 ">
+          <h5 class="mx-3 text-center">Help</h5>
+
+           
+                 <ul class="nav d-block text-center">
+                     
+                     <li class="nav-item"><a href="./faq.html" class="nav-link text-light">FAQ</a></li>
+                     <li class="nav-item"><a href="./cotact.html" class="nav-link text-light">Contact Us</a></li>
+                     <li class="nav-item"><a href="about.html" class="nav-link text-light">About Us</a></li>
+                 </ul>
+            
+         </div>
+         <hr>
+<!-- col-12 -->
+<div class="col-md-12">
+    <ul class="d-flex justify-content-center nav">
+        <li class="nav-item"><a href="https://www.facebook.com" target="_blank" class="nav-link"><i class="fa-brands fa-facebook fa-xl" style="color: #1f71ff;"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com" target="_blank" class="nav-link"><i class="fa-brands fa-instagram fa-xl" style="color: #e869cc;"></i></a></li>
+        <li class="nav-item"><a href="https://twitter.com" target="_blank" class="nav-link"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+        <li class="nav-item"><a href="https://www.reddit.com" target="_blank" class="nav-link"><i class="fa-brands fa-reddit fa-xl" style="color: #de4f12;"></i></a></li>
+        <li class="nav-item"><a href="https://pk.linkedin.com" target="_blank" class="nav-link"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+    </ul>
+</div>
+
+
+    <!-- ====paragraph==== -->
+    <div class="col-md-12 text-center mt-1">
+        <p class="text-light">Rythm House is the one-stop solution for all your music needs. Rythm House offers you free, unlimited access to Hindi Songs, Bollywood Music, English MP3 songs, Bands & Solo Performer's.</p>
+    </div>    
+
+    <div class="col-md-12 text-center mt-0">
+                
+        <i class="fa-solid fa-copyright fa-lg" style="color: #7d7d7d;"></i>
+        <span class="text-light">2023Rythm House Soundtracks. All rights reserved.</span>   
+    
+    </div>
+       </div>
+       </div>
+
+
+
+
+
+<!--     
+    <div class="container-fluid  mt-5">
+        <footer class="footer">
+            <section>
+        <div class="row">
+            <div class="col-md-4 fm1 mt-3">
+                <div class="fh1">
+                <span class="navbar-text">
+                    <a href="" class="navbar-brand mx-3"><span ><i class="fa-sharp fa-solid fa-r  fa-2xl" style="color: #fb15d1;"></i> </span><span class="text-light fh3">ythm House</span></a>
+                </span>
+            </div>
+
+            <div class="fp1">
+                <p class="text-light mt-1 mx-3">Rythm House is the worlds largest collection of Featured albums soundtracks and playlists. We provide as a piece of musics with vocals, which combines rhymed with instruemental melody.
+
+                </p>
+            </div>
+
+            
+            </div>
+
+           - =====learn=== -->
+            <!-- <div class="col-md-4 fm2 mt-5">
+              <div> <h5 class=" fh2 mx-5">Learn</h5></div> 
+
+                <div >
+                    <ul class="fl2">
+                        <li class="nav-item"><a href="" class="nav-link text-light">Terms and Condition</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-light">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-light">etc</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-light">etc</a></li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <!-- ====help / contact about -->
+            <!-- <div class="col-md-4 fm3  my-5">
+               <div> <h5 class=" fh2 mx-5">Help</h5></div>
+
+                <div >
+                    <ul class="fl2">
+                        <li class="nav-item"><a href="" class="nav-link text-light">Support Us</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-light">FAQ</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-light">Contact Us</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-light">About Us</a></li>
+                    </ul>
+                </div>
+            </div> -->
+
+        
+
+        <!-- ====media links==== -->
+             <!-- <div class="col-md-12">
+                <div>
+                    <ul class="fl1 d-flex justify-content-center">
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-reddit fa-xl" style="color: #ffffff;"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div> -->
+
+            <!-- ====hr==== -->
+            <!-- <div class="col-md-12">
+                <hr class="bg-light" size="3px">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <p class="text-light">Rythm House is the one-stop solution for all your music needs. Rythm House offers you free, unlimited access to Hindi Songs, Bollywood Music, English MP3 songs, Bands & Solo Performer's.</p>
+            </div>
+
+            <div class="col-md-12 text-center fp2 mt-3">
+                
+                <i class="fa-solid fa-copyright fa-lg" style="color: #7d7d7d;"></i>
+                <span class="text-light">2023Rythm House Soundtracks. All rights reserved.</span>   
+            
+            </div>
+    </div>
+
+
+</section>
+</footer>
+</div> --> 
+</body>
+</html>

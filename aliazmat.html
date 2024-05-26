@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/50b2160ccc.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+      <!-- ===navbar==== -->
+    <div class="container-fluid">
+        <!-- ===nav==== -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-start" id="mynav" >
+         <!-- ====toggle bar ==    -->
+         <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="./index.html">Home</a>
+          
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="" class="dropdown-toggle " data-bs-toggle="dropdown">Albums</a>
+            <ul class="dropdown-menu bg-dark text-light">
+                <li><a href="./movie.html" class="dropdown-item bg-dark">Movies</a></li>
+                <li><a href="./bands.html" class="dropdown-item bg-dark">Bands</a></li>
+                <li><a href="./solo.html" class="dropdown-item bg-dark">Solo performer's</a></li>
+            </ul>
+            </li>   
+        </ul>
+        <!-- ===night mode=== -->
+        <ul class="navbar-nav">
+            <li><a href="">Night mode</a>
+
+            </li>
+            <div class="form-check form-switch mx-4 mt-2" >
+    <input type="checkbox" class="form-check-input" id="mode1">
+    <label for="" class="form-label" ></label>
+            </div>
+        </ul>
+        <hr>
+        <a href="./cotact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./termandcondition.html">Terms and Conditions</a>
+        
+
+
+        </div>
+      
+        <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars fa-sm"></i></button>
+          <!-- ===jquery of mode=== -->
+ <script>
+
+    $(document).ready(function(){
+
+       $('#mode1').click(function(){
+           $('body').toggleClass('bg-dark');
+           $('body').toggleClass('text-white');
+           $('#mode1').toggleClass('bg-dark');
+          
+       });
+    });
+</script>   
+        <!-- ===rythm section=== -->
+            <span class="navbar-text mx-5">
+                <a href="index.html" class="navbar-brand mx-5"><span ><i class="fa-sharp fa-solid fa-r  fa-2xl" style="color: #fb15d1;"></i></span>ythm House</a>
+            </span>
+          
+
+        </nav>
+        </div>
+        
+  <!-- ==scirpt of toggle bar=== -->
+  <script>
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+        <!-- ====hr====== -->
+        <div><hr class=" hr1"></div>
+        <!-- ====picture==== -->
+        <div class="container-fluid mt-2">
+          
+            <div class="row">
+                  <section >
+                <div class="col-md-12">
+
+                    <div class="img-container ">
+                        <img src="./image/aliazmat3.webp" alt="" class="card-img-top op3 ">
+                        <div class="overlay text-center">
+                            <div class="barbiet display-5"><b>Ali Azmat Songs</b></div>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+                 <!-- ====soundtrack===== -->
+                 <div class="col-md-12 mt-2">
+                    <h2>Soundtrack</h2>
+                 </div>
+                 <!-- ====hr===== -->
+                 <div class="col-md-12">
+                    <hr size="3px">
+                 </div>
+                 <!-- ====picture=== -->
+          <div class="d-flex">       
+                 <span class="col-md-2">
+                            <img src="./image/aliazmat1.jpg" alt="" class="card-img-top"> 
+                 </span>
+        
+                    <!-- ====heading of soundtrack=== -->
+                  <span class="col-md-6 mx-5 mt-3">
+                    <button class=" btn-md text-white btn-secondary">Album</button>
+                    <h4 class="mt-2 "><b>Ali Azmat(Original Motion Picture Soundtrack)</b></h4>
+                    <h5 class=" mt-3 "> <b>The Best Featured Songs Of All Years</b></h5>
+                  </span>              
+                
+        </div>
+
+<!-- playlist-->
+<!-- ====1 song==== -->
+<div class="col-md-10">
+    <div class="row">
+        <!-- ===play and heading=== -->
+        <div class="col-md-3 mt-2">
+            <span>1.</span>
+            <span class="mx-3" data-bs-toggle="modal" data-bs-target="#bar1"> <i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></span>
+       
+        <span class="">Yeh Jism</span>
+        </div>
+
+ 
+        <div class="col-md-3">
+            
+        </div>
+        <!-- singer==== -->
+        <div class="col-md-3 mt-2"><span class="">Ali Azmat</span></div>
+
+        <!-- sound -->
+
+
+        <!-- time and heart===== -->
+        <div class="col-md-3  mt-2">
+            <span class="">3.50</span>
+
+            <span class="mx-2"><a href="" ><i class="fa-solid fa-heart"></i></a></span>
+        </div>
+    </div>
+</div>
+<!-- ====modal 1==== -->
+<div class="modal fade" id="bar1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-center">1</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                        <img src="./image/aliazmat1.jpg" alt="" class="card-img-top rounded-circle  " style="height: 200px; width: 50%;">
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <h4 class="text-center  text-light">Yeh Jism</h4>
+
+                        </div>
+                        <div class="col-md-12 text-center mt-3">
+                            <audio src="./audio/Yeh Jism Jism 2 128 Kbps.mp3" controls autoplay muted download></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==footer=== -->
+            <div class="modal-footer">
+                <button class="btn-dark" data-bs-dismiss="modal">Download</button>
+                <button class="btn-dark " data-bs-dismiss="modal">Cancel</button>
+                </div>
+        </div>
+    </div>
+
+</div>
+<!-- ====2 song=== -->
+<div class="col-md-10">
+    <div class="row">
+        <!-- ===play and heading=== -->
+        <div class="col-md-3 mt-2">
+            <span>2.</span>
+            <span class="mx-3" data-bs-toggle="modal" data-bs-target="#bar2"> <i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></span>
+       
+        <span class="">Maula</span>
+        </div>
+
+ 
+        <div class="col-md-3">
+            
+        </div>
+        <!-- singer==== -->
+        <div class="col-md-3 mt-2"><span class="">Ali Azmat</span></div>
+
+        <!-- sound -->
+
+
+        <!-- time and heart===== -->
+        <div class="col-md-3  mt-2">
+            <span class="">5.08</span>
+
+            <span class="mx-2"><a href="" ><i class="fa-solid fa-heart"></i></a></span>
+        </div>
+    </div>
+</div>
+    <!-- ===modal 2  -->
+<div class="modal fade" id="bar2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-center">2</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                        <img src="./image/aliazmat1.jpg" alt="" class="card-img-top rounded-circle  " style="height: 200px; width: 50%;">
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <h4 class="text-center  text-light">Maula</h4>
+
+                        </div>
+                        <div class="col-md-12 text-center mt-3">
+                            <audio src="./audio/Maula Jism 2 128 Kbps.mp3" controls autoplay muted download></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==footer=== -->
+            <div class="modal-footer">
+                <button class="btn-dark" data-bs-dismiss="modal">Download</button>
+                <button class="btn-dark " data-bs-dismiss="modal">Cancel</button>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===========3song=================== -->
+<div class="col-md-10">
+    <div class="row">
+        <!-- ===play and heading=== -->
+        <div class="col-md-3 mt-2">
+            <span>3.</span>
+            <span class="mx-3" data-bs-toggle="modal" data-bs-target="#bar3"> <i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></span>
+       
+        <span class="">Jazba Junoon</span>
+        </div>
+
+ 
+        <div class="col-md-3">
+            
+        </div>
+        <!-- singer==== -->
+        <div class="col-md-3 mt-2"><span class="">Ali Azmat</span></div>
+
+        <!-- sound -->
+
+
+        <!-- time and heart===== -->
+        <div class="col-md-3  mt-2">
+            <span class="">4.22</span>
+
+            <span class="mx-2"><a href="" ><i class="fa-solid fa-heart"></i></a></span>
+        </div>
+    </div>
+</div>
+    <!-- ===modal 3  -->
+<div class="modal fade" id="bar3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-center">3</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                        <img src="./image/aliazmat1.jpg" alt="" class="card-img-top rounded-circle  " style="height: 200px; width: 50%;">
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <h4 class="text-center  text-light">Jazba Junoon</h4>
+
+                        </div>
+                        <div class="col-md-12 text-center mt-3">
+                            <audio src="./audio/Hai-Jazba-Junoon-Tu-Himmat-Na-Haar.mp3" controls autoplay muted download></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==footer=== -->
+            <div class="modal-footer">
+                <button class="btn-dark" data-bs-dismiss="modal">Download</button>
+                <button class="btn-dark " data-bs-dismiss="modal">Cancel</button>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- ===footer==== -->
+
+<div class="container-fluid  text-light mt-5 foot">
+    <div class="row">
+        <!-- 1 -->
+     <div class="col-md-4 p-5">
+        
+         <span class="navbar-text mt-5">
+             <a href="" class="navbar-brand mx-3"><span ><i class="fa-sharp fa-solid fa-r  fa-2xl" style="color: #fb15d1;"></i> </span><span class="text-light fh3">ythm House</span></a>
+         </span>
+         <p class="text-light mt-2  justify-content-center">Rythm House is the worlds largest collection of Featured albums soundtracks and playlists. We provide as a piece of musics with vocals, which combines rhymed with instruemental melody.
+
+         </p>
+    
+    </div>
+         <!-- 2 -->
+
+    <div class="col-md-4 mt-5 ">
+    <h5 class="mx-5 text-center">Learn</h5>
+           <ul class="nav d-block text-center ">
+               <li class="nav-item "><a href="./termandcondition.html" class="nav-link text-light ">Terms Of Uses</a></li>
+               <li class="nav-item"><a href="./privacy.html" class="nav-link text-light">Privacy Policy</a></li>
+              
+           </ul>
+      
+   </div> 
+       
+   <!-- 3 -->
+
+   <div class="col-md-4 my-5 ">
+   <h5 class="mx-3 text-center">Help</h5>
+
+    
+          <ul class="nav d-block text-center">
+          
+              <li class="nav-item"><a href="./faq.html" class="nav-link text-light">FAQ</a></li>
+              <li class="nav-item"><a href="cotact.html" class="nav-link text-light">Contact Us</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link text-light">About Us</a></li>
+          </ul>
+     
+  </div>
+  <hr>
+<!-- col-12 -->
+<div class="col-md-12">
+<ul class="d-flex justify-content-center nav">
+ <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-facebook fa-xl" style="color: #1f71ff;"></i></a></li>
+ <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-instagram fa-xl" style="color: #e869cc;"></i></a></li>
+ <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+ <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-reddit fa-xl" style="color: #de4f12;"></i></a></li>
+ <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+</ul>
+</div>
+
+
+<!-- ====paragraph==== -->
+<div class="col-md-12 text-center mt-1">
+ <p class="text-light">Rythm House is the one-stop solution for all your music needs. Rythm House offers you free, unlimited access to Hindi Songs, Bollywood Music, English MP3 songs, Bands & Solo Performer's.</p>
+</div>    
+
+<div class="col-md-12 text-center mt-0">
+         
+ <i class="fa-solid fa-copyright fa-lg" style="color: #7d7d7d;"></i>
+ <span class="text-light">2023Rythm House Soundtracks. All rights reserved.</span>   
+
+</div>
+</div>
+</div>
+</body>
+</html>

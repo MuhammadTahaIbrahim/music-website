@@ -1,0 +1,632 @@
+.navbar-brand{
+    font-family: 'Caveat', cursive;
+}
+.spp{
+    color: rgb(240, 12, 152);
+    font-weight: bold;
+}
+
+.hr1{
+    color: rgb(0, 0, 0);
+    
+    margin-top: 67px;
+}
+.carousel-caption{
+    margin-right: 400px;
+    
+    font-weight: bolder;
+    font-size: 30px;   
+}
+.h1{
+    font-size: 80px;
+}
+/* ====toggle bar men======= */
+.sidepanel{
+  width: 0px;
+  position: fixed;
+  height: 660px;
+  top: 0px;
+  left: 0px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.5s;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.sidepanel a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25x;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      
+}
+.sidepanel a:hover{
+  color: #f1f1f1;
+}
+.sidepanel .closebtn{
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  border-bottom: none;
+  
+}
+.openbtn{
+  font-size: 20px;
+  cursor: pointer;
+ background-color: black;
+  color: rgb(255, 254, 254);
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover{
+  background-color:#444;
+}
+/* =====cards==== */
+.img-container{
+    position: relative;
+  }
+  .img-container{
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .btn{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: aliceblue;
+    font-family: sans-serif;
+  }
+  .img-container:hover .image{
+    opacity: 0.9;
+  }
+  .img-container:hover .btn{
+    opacity: 1;
+    
+  }
+ .ht{
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    transform: translate(60%, -99%)
+    
+    font-family: sans-serif;
+ }
+ /* ===for bts==== */
+ .bts{
+    top: 85%;
+    left: 40%;
+    transform:translate(-20%, -60%);
+    color: aliceblue;
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    font-family: sans-serif;
+ }
+ .ht1{
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform:translate(-20%, -60%);
+    color: aliceblue;
+    font-family: sans-serif;
+ } 
+  /* ====footer=== ===========================*/
+ /* footer{
+        
+        background-color: rgb(0, 0, 0);
+        margin-top: 20px;   
+ } */
+ .fh1{
+color: rgb(105, 138, 138);
+    margin-top: 40px;
+ }
+.fp1{
+     margin-top: 15px;
+    text-align: justify; 
+}
+.fp2{
+    /* margin-top: 40px;
+    font-size: 12px; */
+        font-size: 12px;
+}
+/* ====foote media links=== */
+.fm1{
+    /* margin-left: 40px;
+    margin-top: 90px;
+    transform: translate(10%, -0%); */
+    
+}
+.fh2{
+     color: rgb(68, 85, 85);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px; */
+}
+.fl1{
+    /* list-style: none;
+    margin-top: 25px;
+    transform: translate(-5%, 10%); */
+    /* margin-left: 20px; */
+    list-style: none;
+}
+.fh3{
+    /* font-size: 25px; */
+    font-size: 30px;
+}
+.fl2{
+    /* list-style: none;
+    margin-top: 25px;
+    transform: translate(-22%, 10%); */
+    list-style: none;
+}
+.fm2{
+    /* margin-top: 75px; */
+    /* margin-right: 20px;
+    transform: translate(10%, 5%); */
+    padding-left: 155px;
+}
+/* ====help=== */
+.fl3{
+    /* list-style: none;
+    margin-top: 25px; */
+    /* transform: translate(-22%, 10%); */
+    list-style: none;
+}
+.fm3{
+    /* margin-top: 70px; */
+    /* margin-right: 20px;
+    transform: translate(90%, 5%); */
+    padding-left: 140px;
+}
+ /* ====end of footer======================== */
+/* .spp1{
+    margin-left: 185px;
+}
+.spp2{
+    margin-left: 195px;
+}
+.spp3{
+    margin-left: 108px;
+}
+.spp4{
+    margin-left: 140px;
+}
+.spp5{
+    margin-left: 143px;
+}
+.spp6{
+    margin-left: 140px;
+}
+.spp7{
+    margin-left: 132px;
+}
+.spp8{
+    margin-left: 169px;
+}
+.spp9{
+    margin-left: 123px;
+}
+.spp10{
+    margin-left: 186px;
+} */
+.op3{
+    height: 350px;
+    width: 100%;
+}
+.oph1{
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 75%;
+    left: 13%;
+    transform:translate(-20%, -60%);
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight:normal;
+ }
+ /* p;aylist */
+ 
+ 
+ .singer{
+    margin-left: 400px;
+   }
+   .star{
+    margin-left: 10px;
+    color: grey;
+   }
+  .btnp{
+    font-size: 10px;
+    margin-left: 15px;
+    border: none;
+  }
+  .num{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .time{
+    margin-left: 200px;
+  }
+  .heart{
+    margin-left: 10px;
+  }
+  .op{
+    width: 555px;
+    height: 10px;
+  }
+  .alb{
+border-color: rgb(230, 208, 208);
+width: 100px;
+height: 25px;
+color: rgb(255, 22, 111);
+background-color: rgb(230, 221, 221);
+font-weight: bolder;
+border: none;
+font-size: 18px;
+text-decoration: solid;
+  }
+  .ah1{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .rh{
+    margin-top: 150px;
+    font-size: 15px;
+  }
+
+  .ah2{
+ font-weight: bolder;
+    font-size: 25px;
+  }
+  .op4{
+    /* height: 150px;
+    width: 150px; */
+  }
+  .aud{
+width: 900px;
+border-radius: 30px;
+color: aqua;
+height: 80px;
+margin-left: 150px;
+  }
+
+  .ap{
+    height: 80px;
+    width: 50%;
+    margin-left: 20px;
+
+  }
+  .ac{
+    margin-top: 70px;
+    height: 80px;
+  }
+  .as{
+    margin-top: 1px;
+    align-content: ;
+  }
+  /* ======p of footer========== */
+  /* .p1{
+    text-align: justify;
+  } */
+
+  .barbiet{
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 75%;
+    left: 13%;
+    transform:translate(-20%, -60%);
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight:normal;
+ }
+
+ 
+ .hpt{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+
+ 
+ .trollt{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+.docst{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.shiddat-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.pat-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.lon-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.ts-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+
+.al-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.eg-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.be-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.bts-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.od-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+
+.or-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+.nfat{
+  font-size: 35px;
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+}
+.jb-t{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+} 
+#bolli{
+  display: none;
+}
+#bolli1{
+  display: none;
+}  
+#bolli2{
+  display: none;
+}
+.load1{
+ 
+background-color: rgb(3, 3, 5);
+color: white;
+border: 2px solid rgb(69, 67, 70);
+border-radius: 5px;
+}
+
+
+.avt{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform:translate(-20%, -60%);
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight:normal;
+  font-size: 35px;
+}
+/* termandcondition */
+.cp{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #7e7e7e;
+}
+
+.hp{
+  height: 500px;
+  width: 100%;
+}
+.thank{
+  height: 500px;
+  width: 100%;
+}
+.foot{
+  background-color: rgb(55, 54, 65);
+}
+/* ====dwonload form === */
+  /* bg colro of form=== */
+  #bgform{
+    background-color: rgb(152, 170, 168);
+  }  
+  #frombtn{
+    border-radius: 10px;
+    border: 2px solid rgb(69, 67, 70);
+    /* termandcondition */
+.cp{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #7e7e7e;
+  }
+  
+  .hp{
+    height: 500px;
+    width: 100%;
+  }
+  .thank{
+    height: 500px;
+    width: 100%;
+  }
+  
+  /* aboutus */
+  .ah{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .ap{
+  text-align: center;
+  }

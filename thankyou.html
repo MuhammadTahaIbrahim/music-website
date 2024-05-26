@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/50b2160ccc.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <!-- ===navbar==== -->
+    <div class="container-fluid">
+        <!-- ===nav==== -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-start" id="mynav" >
+         <!-- ====toggle bar ==    -->
+         <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="./index.html">Home</a>
+          
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="" class="dropdown-toggle " data-bs-toggle="dropdown">Albums</a>
+            <ul class="dropdown-menu bg-dark text-light">
+                <li><a href="./movie.html" class="dropdown-item bg-dark">Movies</a></li>
+                <li><a href="./bands.html" class="dropdown-item bg-dark">Bands</a></li>
+                <li><a href="./solo.html" class="dropdown-item bg-dark">Solo performer's</a></li>
+            </ul>
+            </li>   
+        </ul>
+        <!-- ===night mode=== -->
+        <ul class="navbar-nav">
+            <li><a href="">Night mode</a>
+
+            </li>
+            <div class="form-check form-switch mx-4 mt-2" >
+    <input type="checkbox" class="form-check-input" id="mode1">
+    <label for="" class="form-label" ></label>
+            </div>
+        </ul>
+        <hr>
+        <a href="./cotact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./termandcondition.html">Terms and Conditions</a>
+        
+
+
+        </div>
+      
+        <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars fa-sm"></i></button>
+          <!-- ===jquery of mode=== -->
+ <script>
+
+    $(document).ready(function(){
+
+       $('#mode1').click(function(){
+           $('body').toggleClass('bg-dark');
+           $('body').toggleClass('text-white');
+           $('#mode1').toggleClass('bg-dark');
+          
+       });
+    });
+</script>   
+        <!-- ===rythm section=== -->
+            <span class="navbar-text mx-5">
+                <a href="index.html" class="navbar-brand mx-5"><span ><i class="fa-sharp fa-solid fa-r  fa-2xl" style="color: #fb15d1;"></i></span>ythm House</a>
+            </span>
+          
+
+        </nav>
+        </div>
+        
+  <!-- ==scirpt of toggle bar=== -->
+  <script>
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+        <!-- ====heading=== -->
+        <div><hr class="hr1"></div>
+        <div class="container-fluid text-center">
+    <img src="./image/contactus.png" alt="" class="thank"></div>
+</body>
+</html>
